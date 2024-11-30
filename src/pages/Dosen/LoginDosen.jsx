@@ -1,25 +1,25 @@
 import React from "react";
 
-const LoginSiswa = () => {
+const LoginDosen = () => {
   return (
     <div className="login-page" style={{ height: "100vh", display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "#f4f6f9" }}>
       <div className="login-box card p-4" style={{ maxWidth: "400px", width: "100%", borderRadius: "10px", boxShadow: "0px 4px 10px rgba(0,0,0,0.1)" }}>
-        <h3 className="text-center mb-4">Login Siswa</h3>
+        <h3 className="text-center mb-4">Login Dosen</h3>
         <form>
           {/* Email Address */}
           <div className="mb-3">
-            <label htmlFor="nisn" className="form-label">
-              NISN
+            <label htmlFor="nip" className="form-label">
+              NIP
             </label>
             <div className="input-group">
               <span className="input-group-text">
               <i class="fas fa-key"></i>
               </span>
               <input
-                type="nisn"
+                type="nip"
                 className="form-control"
-                id="nisn"
-                placeholder="NISN"
+                id="nip"
+                placeholder="NIP"
                 required
               />
             </div>
@@ -58,18 +58,17 @@ const LoginSiswa = () => {
 
           {/* Submit Button */}
           <a
-            href="/siswa/dashboard"
+            href="/dosen/dashboard"
             type="submit"
             className="btn btn-primary btn-block"
             style={{ width: "100%", borderRadius: "5px" }}
           >
             LOGIN
           </a>
-          {/* <a href="/">Dashboard Admin</a> */}
         </form>
       </div>
     </div>
   );
 };
 
-export default LoginSiswa;
+export default LoginDosen;
